@@ -43,7 +43,8 @@ const resultD20 = document.querySelector('#d20-roll')
 
 //the single die
 const dieClick = function(){
-  
+  //have a variable hold our result, we'll use the 'getRandomNumber' function, and set the max to 6
+  let result = getRandomNumber(6)
   }
 
 // dice 1 of two
@@ -74,6 +75,9 @@ const twelveSided = function(){
  resultDD6Jr.addEventListener('click',twoOf)
  resultD12.addEventListener('click', twelveSided)
  resultD20.addEventListener('click',twentySided)
+
+ // add some images 
+
 /******************
  * RESET FUNCTION *
  ******************/
