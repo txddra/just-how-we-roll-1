@@ -48,8 +48,11 @@ const dieClick = function(){
   // push the result into the array given to us, in this case 'sixes'
   sixes.push(result)
   //the image will be displayed when clicked
-resultD6.src ='./images/d6'+ result + '.png'
+resultD6.src ='./images/d6/'+ result + '.png'
+
   }
+
+
 
 // dice 1 of two
 const oneOf = function(){
