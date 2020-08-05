@@ -39,7 +39,7 @@ const resultDD6Jr = document.querySelector('#double-d6-roll-2')
 const resultD12 = document.querySelector('#d12-roll')
 const resultD20 = document.querySelector('#d20-roll')
 
-//functions:
+//functions that add the images:
 
 //the single die
 const dieClick = function(){
@@ -64,7 +64,16 @@ resultDD6.src = './images/d6/' + result + '.png'
 
 // dice 2 of two
 const twoOf= function(){
+let result = getRandomNumber(6)
 
+sixes.push(result)
+resultDD6Jr.src ='./images/d6/' + result + '.png'
+}
+
+//makes them go at the same time
+const sameTime = function(){
+  oneOf()
+  twoOf()
 }
 
 // twelve sided die
@@ -81,12 +90,13 @@ const twelveSided = function(){
  *******************/
 //the action that will happen when i click on this
  resultD6.addEventListener('click',dieClick)
- resultDD6.addEventListener('click',oneOf)
- resultDD6Jr.addEventListener('click',twoOf)
+ //only going to use one function cause they will both work at the same time
+ resultDD6.addEventListener('click',sameTime)
+//  resultDD6Jr.addEventListener('click',twoOf)
  resultD12.addEventListener('click', twelveSided)
  resultD20.addEventListener('click',twentySided)
 
- // add some images 
+
 
 /******************
  * RESET FUNCTION *
