@@ -45,6 +45,10 @@ const resultD20 = document.querySelector('#d20-roll')
 const dieClick = function(){
   //have a variable hold our result, we'll use the 'getRandomNumber' function, and set the max to 6
   let result = getRandomNumber(6)
+  // push the result into the array given to us, in this case 'sixes'
+  sixes.push(result)
+  //the image will be displayed when clicked
+resultD6.src ='./images/d6'+ result + '.png'
   }
 
 // dice 1 of two
