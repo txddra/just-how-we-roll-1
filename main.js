@@ -56,7 +56,10 @@ resultD6.src ='./images/d6/'+ result + '.png'
 
 // dice 1 of two
 const oneOf = function(){
+let result = getRandomNumber(6)
 
+sixes.push(result)
+resultDD6.src = './images/d6/' + result + '.png'
   }
 
 // dice 2 of two
