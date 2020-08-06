@@ -126,7 +126,7 @@ resultD12.src = "images/start/d12.jpeg";
 resultD20.src = "images/start/d20.jpg";
 }
 
-button= document.querySelector('#reset-button')
+button = document.querySelector('#reset-button')
 button.addEventListener('click',resetButton)
 /****************
  * MATH SECTION *
