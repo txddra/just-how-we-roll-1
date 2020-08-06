@@ -78,7 +78,10 @@ const sameTime = function(){
 
 // twelve sided die
 const twelveSided = function(){
+let result = getRandomNumber(12)
 
+twelves.push(result)
+resultD12.src ='./images/numbers'
 }
 
 // twenty sided die
