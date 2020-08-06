@@ -108,7 +108,26 @@ resultD12.src ='./images/numbers/' + result +'.png'
 /******************
  * RESET FUNCTION *
  ******************/
+/*our reset function will include
+- changing the images to their 'start' position
+- removing the text
+ */
+let resetButton = function(){
+  //removes all things from array
+sixes.splice(0);
+doubleSixes.splice(0)
+twelves.splice(0)
+twenties.splice(0)
+//resets the images
+resultD6.src = 'images/start/d6.png';
+resultDD6.src = 'images/start/d6.png';
+resultDD6Jr.src = 'images/start/d6.png';
+resultD12.src = "images/start/d12.jpeg";
+resultD20.src = "images/start/d20.jpg";
+}
 
+button= document.querySelector('#reset-button')
+button.addEventListener('click',resetButton)
 /****************
  * MATH SECTION *
  ****************/
