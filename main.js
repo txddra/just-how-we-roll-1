@@ -81,11 +81,15 @@ const twelveSided = function(){
 let result = getRandomNumber(12)
 
 twelves.push(result)
-resultD12.src ='./images/numbers'
+resultD12.src ='./images/numbers/' + result +'.png'
 }
 
 // twenty sided die
  const twentySided = function(){
+   let result = getRandomNumber(20)
+
+   twenties.push(result)
+   resultD20.src ='./images/numbers/' + result + '.png'
 
  }
 /*******************
